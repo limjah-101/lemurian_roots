@@ -1,0 +1,290 @@
+/*  */
+@import url("https://fonts.googleapis.com/css?family=Lato:100,400,700&display=swap");
+/* LIGHTER SHADE PRIMARY */
+/* DARKER SHADE PRIMARY */
+/* DARKEST GREY FOR HEADING */
+/* DARKEST GREY FOR PARAGRAPH */
+/* TRANSITION */
+/* LETTER SPACING*/
+/* BOX SHADOW */
+/*  global classes */
+/* RESET */
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #fff;
+  color: #012b1d;
+  line-height: 1.5;
+  font-size: 0.875rem; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%;
+  display: block; }
+
+/* img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+} */
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 0.875rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  color: #012b1d; }
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem; }
+  h2 {
+    font-size: 2.5rem; }
+  h3 {
+    font-size: 1.75rem; }
+  h4 {
+    font-size: 1rem; }
+  body {
+    font-size: 1rem; }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1; } }
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.3s linear; }
+  .btn__primary {
+    color: #37c898;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    width: 300px;
+    height: 60px;
+    padding: .8rem;
+    font-size: 1.3rem; }
+    .btn__primary:hover {
+      background: rgba(255, 255, 255, 0.3); }
+  .btn__secondary {
+    color: #012b1d;
+    background: rgba(82, 218, 171, 0.7);
+    overflow: hidden;
+    border: 1px solid #056142;
+    width: 200px;
+    height: 40px;
+    padding: .5rem;
+    font-size: 0.875rem; }
+    .btn__secondary:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 100%;
+      background: #37c898;
+      z-index: -1;
+      transition: all .3s ease-out; }
+    .btn__secondary:hover {
+      color: #012b1d;
+      background: transparent; }
+    .btn__secondary:hover:before {
+      left: 0; }
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(to top left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../images/home.jpg") bottom/cover no-repeat;
+  background-attachment: fixed;
+  /* perfect hori-vet center */
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero-banner {
+    text-align: center;
+    color: #fff; }
+    .hero-banner > h1 {
+      text-transform: uppercase; }
+    .hero-banner > p {
+      max-width: 20rem;
+      margin-left: auto;
+      margin-right: auto;
+      letter-spacing: 0.25rem;
+      color: #fff;
+      text-justify: auto; }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    filter: saturate(120%); }
+    .hero-banner > p {
+      max-width: 35rem; } }
+
+.section {
+  padding: 5rem 0;
+  /*  */ }
+  .section-title {
+    text-align: center;
+    margin-bottom: 4rem; }
+    .section-title > h2 {
+      text-transform: uppercase; }
+      .section-title > h2 > span {
+        color: #37c898; }
+  .section-center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto; }
+    .section-center > .about-img, .section-center .about-info {
+      margin-bottom: 2rem; }
+    @media screen and (min-width: 1170px) {
+      .section-center > .about-img::before {
+        content: "";
+        position: absolute;
+        border: 0.5rem solid #2eb88c;
+        width: 100%;
+        height: 100%;
+        top: -1.5rem;
+        left: -1.5rem; }
+      .section-center > .about-img {
+        position: relative; } }
+  @media screen and (min-width: 992px) {
+    .section {
+      /* SET UP 2 COLUMN LAYOUT IN BIG SCREEN */ }
+      .section-center {
+        width: 95vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .section-center > .about-img, .section-center .about-info {
+          flex: 0 0 calc(50% - 2rem);
+          margin-bottom: 0;
+          align-self: center; }
+        .section-center > .about-img > img {
+          filter: saturate(180%); } }
+
+.services {
+  background: linear-gradient(to top left, rgba(46, 184, 140, 0.5), black), url("../../images/spinny.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  filter: saturate(50%); }
+
+.service {
+  text-align: center;
+  padding: 1rem;
+  transition: all 0.3s linear; }
+  .service:hover {
+    background: rgba(58, 62, 61, 0.1);
+    border-radius: 5px; }
+  .service-icon {
+    position: relative;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: #37c898;
+    transition: all 0.3s linear; }
+    .service-icon:hover {
+      color: #2eb88c; }
+  .service__info > h4 {
+    font-size: 1.5rem;
+    color: #fff; }
+  .service__info-text {
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff; }
+
+@media screen and (min-width: 576px) {
+  .service {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 1rem; } }
+
+@media screen and (min-width: 992px) {
+  .service {
+    flex: 0 0 calc(33.333% - 1rem); } }
+
+.tour__card {
+  transition: all 0.3s linear;
+  background: rgba(58, 62, 61, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  border-radius: 5px; }
+  .tour__card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01); }
+  .tour__card-img {
+    position: relative; }
+    .tour__card-img > img {
+      height: 15rem;
+      object-fit: cover;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      filter: saturate(180%) brightness(85%); }
+    .tour__card-img > p {
+      position: absolute;
+      padding: .5rem;
+      background: rgba(58, 62, 61, 0.7);
+      top: 0;
+      left: 0;
+      margin-bottom: 0;
+      letter-spacing: .5px;
+      color: #a4ffe1;
+      text-transform: capitalize;
+      border-top-left-radius: 5px; }
+  .tour__card-info {
+    padding: 1rem; }
+    .tour__card-info > h4 {
+      font-size: 1.2rem; }
+    .tour__card-info > p {
+      letter-spacing: .5px; }
+  .tour__card-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 1rem 1.5rem 1rem; }
+    .tour__card-footer > p {
+      line-height: 0;
+      margin-bottom: 0;
+      text-transform: capitalize;
+      color: #012b1d; }
+
+.tour-btn {
+  text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .featured-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .tour__card {
+    flex: 0 0 calc(50% - 2rem); } }
+
+@media screen and (min-width: 1170px) {
+  .tour__card {
+    flex: 0 0 calc(50% - 2rem); } }

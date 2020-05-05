@@ -1,0 +1,44 @@
+/* LIGHTER SHADE PRIMARY */
+$primary-light-1: hsl(160, 57%, 50%);
+$primary-light-2: hsl(159, 65%, 59%);
+// $primary-dark-3:;
+// $primary-dark-4:;
+
+$primary: hsl(161, 60%, 45%);//rgb(0, 197, 133);
+/* DARKER SHADE PRIMARY */
+$primary-dark-1: hsl(160, 90%, 20%);
+$primary-dark-2: hsl(160, 84%, 25%);
+// $primary-light-3:;
+// $primary-light-4:;
+
+/* DARKEST GREY FOR HEADING */
+$grey: rgb(58, 62, 61);
+$grey-dark-1: rgb(1, 43, 29);
+$grey-dark-2: rgb(0, 103, 69);
+$grey-dark-3: rgb(0, 140, 94);
+
+// $grey-5: rgb(58, 62, 61);
+
+/* DARKEST GREY FOR PARAGRAPH */
+$grey-light-1: rgb(164, 255, 225);
+$grey-light-2: rgb(112, 255, 208);
+
+
+$black: #000;
+$white: #fff;
+
+/* TRANSITION */
+$transition-sm: all .3s linear;
+$transition-lg: all .6s linear;
+$transition-xl: all 1s linear;
+
+/* LETTER SPACING*/
+$spacing-sm: .25rem;
+$spacing-lg: .5rem;
+
+/* BOX SHADOW */
+$shadow-light: 0 5px 15px rgba(0, 0, 0, .1);
+$shadow-dark: 0 5px 15px rgba(0, 0, 0, .2);
+
+
+/*  global classes */

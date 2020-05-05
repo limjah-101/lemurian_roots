@@ -1,0 +1,52 @@
+.services {
+    background: linear-gradient(to top left,rgba($primary,.5), rgba(0,0,0,1)), 
+    url("../../images/spinny.jpg") center/cover no-repeat;
+    background-attachment: fixed;    
+    filter: saturate(50%);
+}
+.service {
+    text-align: center;
+    // margin-bottom: 2rem;
+    padding: 1rem;
+    transition: $transition-sm;
+    &:hover {
+        background: rgba($grey, .1);
+        border-radius: 5px;        
+    }
+    &-icon {
+        position: relative;
+        font-size: 2.5rem;
+        display: inline-block;
+        margin-bottom: 2rem;
+        color: $primary-light-1;
+        transition: $transition-sm;
+        &:hover{
+            color: $primary;
+        }
+    }
+
+    &__info {
+        &>h4{
+            font-size: 1.5rem;
+            color: $white;
+        }
+        &-text {
+            max-width: 20rem;
+            margin-left: auto;
+            margin-right: auto;
+            color: $white;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .service {
+        flex: 0 0 calc(50% - 1rem);
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .service {
+        flex: 0 0 calc(33.333% - 1rem);        
+    }
+}

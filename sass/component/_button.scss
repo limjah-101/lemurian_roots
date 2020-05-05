@@ -1,0 +1,58 @@
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: $spacing-sm;
+    text-transform: uppercase;
+    position: relative;
+    transition: $transition-sm;
+
+    &__primary {
+        color: $primary-light-1;
+        background: transparent;
+        // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border: 2px solid $white;
+        color: $white;
+        width: 300px;
+        height: 60px;
+        padding: .8rem;
+        font-size: 1.3rem;
+        
+        &:hover {            
+            background: rgba($white, .3);
+        }
+    }
+
+    &__secondary {
+        color: $grey-dark-1;
+        background: rgba($primary-light-2, .7);
+        overflow: hidden;
+        border: 1px solid $primary-dark-1;
+        width: 200px;
+        height: 40px;
+        padding: .5rem;
+        font-size: 0.875rem;
+
+        &:before {
+            content: '';
+            // position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 100%;
+            background: $primary-light-1;
+            z-index: -1;
+            transition: all .3s ease-out;
+        }
+
+        &:hover {
+            color: $grey-dark-1;
+            background: transparent;
+        }
+
+        &:hover:before {
+            // top: -25px;
+            left: 0;
+        }
+    }
+}

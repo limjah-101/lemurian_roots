@@ -1,0 +1,14 @@
+{
+  "name": "lr_tour",
+  "version": "1.0.0",
+  "description": "CSS FLEXBOX",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "limjah-101",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
